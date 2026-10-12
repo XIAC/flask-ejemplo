@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <h1>Página de Contacto</h1>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/estudiantes">Estudiantes</a>
+        <a href="/contacto">Contacto</a>
+    </nav>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+        <label>Email:</label>
+        <input type="email" name="email">
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
